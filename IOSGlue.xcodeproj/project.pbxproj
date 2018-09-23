@@ -7,14 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4B6417B6211B7FED0042FC99 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B6417B5211B7FED0042FC99 /* AppDelegate.m */; };
-		4B6417B9211B7FED0042FC99 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B6417B8211B7FED0042FC99 /* ViewController.m */; };
 		4B6417BC211B7FED0042FC99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B6417BA211B7FED0042FC99 /* Main.storyboard */; };
 		4B6417BE211B7FEE0042FC99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B6417BD211B7FEE0042FC99 /* Assets.xcassets */; };
 		4B6417C1211B7FEE0042FC99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B6417BF211B7FEE0042FC99 /* LaunchScreen.storyboard */; };
-		4B6417C4211B7FEE0042FC99 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B6417C3211B7FEE0042FC99 /* main.m */; };
 		4B6417CE211B7FEE0042FC99 /* IOSGlueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B6417CD211B7FEE0042FC99 /* IOSGlueTests.m */; };
 		4B6417D9211B7FEE0042FC99 /* IOSGlueUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B6417D8211B7FEE0042FC99 /* IOSGlueUITests.m */; };
+		4B69692A2156B79F009CDD3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6969292156B79F009CDD3E /* AppDelegate.swift */; };
+		4B6969512156BBC4009CDD3E /* BeaconListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6969502156BBC4009CDD3E /* BeaconListController.swift */; };
+		4B6969522156BC96009CDD3E /* Bluecast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B6969272156B6EB009CDD3E /* Bluecast.framework */; };
+		4B6969822156C59B009CDD3E /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B6969812156C59B009CDD3E /* libc++.tbd */; };
+		4B69699E2158403D009CDD3E /* DisplayInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B69699D2158403D009CDD3E /* DisplayInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,25 +34,33 @@
 			remoteGlobalIDString = 4B6417B0211B7FED0042FC99;
 			remoteInfo = IOSGlue;
 		};
+		4B6969262156B6EB009CDD3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B6969212156B6EA009CDD3E /* Bluecast.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4BE0A89D21554D0400F9C402;
+			remoteInfo = Bluecast;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		4B6417B1211B7FED0042FC99 /* IOSGlue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSGlue.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		4B6417B4211B7FED0042FC99 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		4B6417B5211B7FED0042FC99 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4B6417B7211B7FED0042FC99 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4B6417B8211B7FED0042FC99 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		4B6417BB211B7FED0042FC99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4B6417BD211B7FEE0042FC99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B6417C0211B7FEE0042FC99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B6417C2211B7FEE0042FC99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4B6417C3211B7FEE0042FC99 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4B6417C9211B7FEE0042FC99 /* IOSGlueTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOSGlueTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B6417CD211B7FEE0042FC99 /* IOSGlueTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOSGlueTests.m; sourceTree = "<group>"; };
 		4B6417CF211B7FEE0042FC99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B6417D4211B7FEE0042FC99 /* IOSGlueUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOSGlueUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B6417D8211B7FEE0042FC99 /* IOSGlueUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOSGlueUITests.m; sourceTree = "<group>"; };
 		4B6417DA211B7FEE0042FC99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B6969212156B6EA009CDD3E /* Bluecast.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Bluecast.xcodeproj; path = ../superglue/modules/bluecast/xcodeproj/Bluecast/Bluecast.xcodeproj; sourceTree = "<group>"; };
+		4B6969292156B79F009CDD3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4B6969502156BBC4009CDD3E /* BeaconListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconListController.swift; sourceTree = "<group>"; };
+		4B6969812156C59B009CDD3E /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		4B6969862156CEE7009CDD3E /* IOSGlue-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IOSGlue-Bridging-Header.h"; sourceTree = "<group>"; };
+		4B69699D2158403D009CDD3E /* DisplayInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayInfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B6969822156C59B009CDD3E /* libc++.tbd in Frameworks */,
+				4B6969522156BC96009CDD3E /* Bluecast.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +97,7 @@
 				4B6417CC211B7FEE0042FC99 /* IOSGlueTests */,
 				4B6417D7211B7FEE0042FC99 /* IOSGlueUITests */,
 				4B6417B2211B7FED0042FC99 /* Products */,
+				4B6417E6211B830F0042FC99 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,15 +114,14 @@
 		4B6417B3211B7FED0042FC99 /* IOSGlue */ = {
 			isa = PBXGroup;
 			children = (
-				4B6417B4211B7FED0042FC99 /* AppDelegate.h */,
-				4B6417B5211B7FED0042FC99 /* AppDelegate.m */,
-				4B6417B7211B7FED0042FC99 /* ViewController.h */,
-				4B6417B8211B7FED0042FC99 /* ViewController.m */,
+				4B6969292156B79F009CDD3E /* AppDelegate.swift */,
 				4B6417BA211B7FED0042FC99 /* Main.storyboard */,
 				4B6417BD211B7FEE0042FC99 /* Assets.xcassets */,
 				4B6417BF211B7FEE0042FC99 /* LaunchScreen.storyboard */,
 				4B6417C2211B7FEE0042FC99 /* Info.plist */,
-				4B6417C3211B7FEE0042FC99 /* main.m */,
+				4B6969502156BBC4009CDD3E /* BeaconListController.swift */,
+				4B6969862156CEE7009CDD3E /* IOSGlue-Bridging-Header.h */,
+				4B69699D2158403D009CDD3E /* DisplayInfoViewController.swift */,
 			);
 			path = IOSGlue;
 			sourceTree = "<group>";
@@ -130,6 +142,23 @@
 				4B6417DA211B7FEE0042FC99 /* Info.plist */,
 			);
 			path = IOSGlueUITests;
+			sourceTree = "<group>";
+		};
+		4B6417E6211B830F0042FC99 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B6969812156C59B009CDD3E /* libc++.tbd */,
+				4B6969212156B6EA009CDD3E /* Bluecast.xcodeproj */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4B6969222156B6EA009CDD3E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4B6969272156B6EB009CDD3E /* Bluecast.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +228,7 @@
 				TargetAttributes = {
 					4B6417B0211B7FED0042FC99 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 					4B6417C8211B7FEE0042FC99 = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -221,6 +251,12 @@
 			mainGroup = 4B6417A8211B7FED0042FC99;
 			productRefGroup = 4B6417B2211B7FED0042FC99 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4B6969222156B6EA009CDD3E /* Products */;
+					ProjectRef = 4B6969212156B6EA009CDD3E /* Bluecast.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				4B6417B0211B7FED0042FC99 /* IOSGlue */,
@@ -229,6 +265,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		4B6969272156B6EB009CDD3E /* Bluecast.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Bluecast.framework;
+			remoteRef = 4B6969262156B6EB009CDD3E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		4B6417AF211B7FED0042FC99 /* Resources */ = {
@@ -262,9 +308,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B6417B9211B7FED0042FC99 /* ViewController.m in Sources */,
-				4B6417C4211B7FEE0042FC99 /* main.m in Sources */,
-				4B6417B6211B7FED0042FC99 /* AppDelegate.m in Sources */,
+				4B69692A2156B79F009CDD3E /* AppDelegate.swift in Sources */,
+				4B69699E2158403D009CDD3E /* DisplayInfoViewController.swift in Sources */,
+				4B6969512156BBC4009CDD3E /* BeaconListController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,14 +479,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F37K9V3993;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/superglue/include";
 				INFOPLIST_FILE = IOSGlue/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = Loki.IOSGlue;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "IOSGlue/IOSGlue-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -449,14 +503,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F37K9V3993;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/superglue/include";
 				INFOPLIST_FILE = IOSGlue/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = Loki.IOSGlue;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "IOSGlue/IOSGlue-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -464,6 +525,7 @@
 		4B6417E1211B7FEE0042FC99 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = IOSGlueTests/Info.plist;
@@ -482,6 +544,7 @@
 		4B6417E2211B7FEE0042FC99 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = IOSGlueTests/Info.plist;
@@ -500,6 +563,7 @@
 		4B6417E4211B7FEE0042FC99 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = IOSGlueUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -517,6 +581,7 @@
 		4B6417E5211B7FEE0042FC99 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = IOSGlueUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
