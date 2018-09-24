@@ -73,7 +73,7 @@
         <!--Display Info View Controller-->
         <scene sceneID="Axu-zv-NYa">
             <objects>
-                <viewController id="bgt-w6-2rQ" customClass="DisplayInfoViewController" customModule="IOSGlue" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DisplayInfoController" id="bgt-w6-2rQ" customClass="DisplayInfoViewController" customModule="IOSGlue" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2pv-Ep-MqY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

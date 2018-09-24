@@ -18,11 +18,16 @@ class DisplayInfoViewController: UIViewController, uBlueViewDisplayController {
     var device : uBlueDevice?
     
     func display(_ device: uBlueDevice, info: String) {
-        labelName.text = device.name
-        labelUUID.text = device.address
-        
-        displayInfo.text = info
+        DispatchQueue.main.async {
+            self.labelName.text = device.name
+            self.labelUUID.text = device.address
+            
+            self.displayInfo.lineBreakMode = .byWordWrapping
+            self.displayInfo.numberOfLines = 0
+            self.displayInfo.text = info
+        }
     }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,11 +39,5 @@ class DisplayInfoViewController: UIViewController, uBlueViewDisplayController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        SuperGlueBluecast.bluetooth!.blueCallback!.onDestroyDisplay()
-        
-        super.viewWillDisappear(animated)
     }
 }

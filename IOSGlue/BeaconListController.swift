@@ -93,7 +93,7 @@ class BeaconListController: UITableViewController, uBlueViewMainController {
         DispatchQueue.main.async {
             let nav = UIApplication.shared.keyWindow!.rootViewController! as! UINavigationController
             
-            let view = DisplayInfoViewController()
+            let view = self.storyboard!.instantiateViewController(withIdentifier: "DisplayInfoController") as! DisplayInfoViewController
             view.device = device
             nav.pushViewController(view, animated: true)
         }
@@ -109,14 +109,6 @@ class BeaconListController: UITableViewController, uBlueViewMainController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
-        
-        SuperGlueBluecast.bluetooth!.blueView = blueView
-    }
-
-    override func viewWillDisappear(_ animated: Bool) {
-        SuperGlueBluecast.bluetooth!.blueCallback!.onDestroyMain()
-        
-        super.viewWillDisappear(true)
     }
     
     override func didReceiveMemoryWarning() {
